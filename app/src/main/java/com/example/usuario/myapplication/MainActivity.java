@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         resultadoSuma = (TextView)findViewById(R.id.resultadoSuma);
     }
 
+    //metodo asociado al <sumar>
     public void sumar(View view) {
 
         try {
@@ -39,5 +40,6 @@ public class MainActivity extends AppCompatActivity {
             resultadoSuma.setText("ERROR");
         }
     }
-    
+
+    //metodo asociado al <operar>
 }
