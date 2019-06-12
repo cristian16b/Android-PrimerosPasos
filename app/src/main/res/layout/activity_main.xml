@@ -65,6 +65,7 @@
                 android:id="@+id/radioRestar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="false"
                 android:text="Restar" />
 
             <RadioButton
@@ -72,6 +73,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Multiplicar" />
+
+            <Button
+                android:id="@+id/botonOperar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="operar"
+                android:text="Operar" />
         </LinearLayout>
 
     </LinearLayout>

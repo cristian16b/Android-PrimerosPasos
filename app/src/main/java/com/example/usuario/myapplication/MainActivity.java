@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -11,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText numeroI;
     private EditText numeroII;
     private TextView resultadoSuma;
+    private RadioButton radioRestar,radioMultiplicar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         numeroI = (EditText)findViewById(R.id.primerNumero);
         numeroII = (EditText)findViewById(R.id.segundoNumero);
         resultadoSuma = (TextView)findViewById(R.id.resultadoSuma);
+        radioMultiplicar = (RadioButton)findViewById(R.id.radioMultiplicar);
+        radioRestar = (RadioButton)findViewById(R.id.radioRestar);
     }
 
     //metodo asociado al <sumar>
@@ -42,4 +46,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //metodo asociado al <operar>
+    public void operar(View view) {
+        try {
+            String primerNumero = numeroI.getText().toString();
+            String segundoNumero = numeroII.getText().toString();
+            int nro1 = Integer.parseInt(primerNumero);
+            int nro2 = Integer.parseInt(segundoNumero);
+
+            if(radioRestar.isChecked()) {
+                resultadoSuma.setText("El resultado es " + Integer.toString(nro1-nro2));
+            }
+            if(radioMultiplicar.isChecked()) {
+                resultadoSuma.setText("El resultado es " + Integer.toString(nro1*nro2));
+            }
+        }
+        catch (Exception e) {
+
+        }
+    }
 }
