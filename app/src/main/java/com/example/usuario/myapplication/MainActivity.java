@@ -25,13 +25,20 @@ public class MainActivity extends AppCompatActivity {
 
     public void sumar(View view) {
 
-        String primerNumero = numeroI.getText().toString();
-        String segundoNumero = numeroII.getText().toString();
-        int nro1 = Integer.parseInt(primerNumero);
-        int nro2 = Integer.parseInt(segundoNumero);
-        int suma = nro1 + nro2;
-        String Suma =  Integer.toString(suma);
+        try {
+            String primerNumero = numeroI.getText().toString();
+            String segundoNumero = numeroII.getText().toString();
+            int nro1 = Integer.parseInt(primerNumero);
+            int nro2 = Integer.parseInt(segundoNumero);
+            int suma = nro1 + nro2;
+            String Suma =  Integer.toString(suma);
 
-        resultadoSuma.setText("El resultado es " +  Suma);
+            resultadoSuma.setText("El resultado es " +  Suma);
+        }
+        catch (Exception e) {
+            resultadoSuma.setText("ERROR");
+        }
     }
+
+    
 }
