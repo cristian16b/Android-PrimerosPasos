@@ -70,13 +70,15 @@
                     android:id="@+id/radioMultiplicar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:clickable="true"
                     android:text="Multiplicar" />
 
                 <RadioButton
                     android:id="@+id/radioRestar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:clickable="false"
+                    android:clickable="true"
                     android:text="Restar" />
             </RadioGroup>
 
