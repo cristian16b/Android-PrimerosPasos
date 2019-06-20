@@ -61,18 +61,24 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <RadioButton
-                android:id="@+id/radioRestar"
+            <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clickable="false"
-                android:text="Restar" />
+                android:orientation="horizontal">
 
-            <RadioButton
-                android:id="@+id/radioMultiplicar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Multiplicar" />
+                <RadioButton
+                    android:id="@+id/radioMultiplicar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Multiplicar" />
+
+                <RadioButton
+                    android:id="@+id/radioRestar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="Restar" />
+            </RadioGroup>
 
             <Button
                 android:id="@+id/botonOperar"
