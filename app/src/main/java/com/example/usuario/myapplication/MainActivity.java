@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         catch (Exception e) {
-
+            resultadoSuma.setText("ERROR");
         }
     }
 }
