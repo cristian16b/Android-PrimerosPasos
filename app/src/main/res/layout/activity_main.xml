@@ -89,7 +89,20 @@
                 android:layout_weight="1"
                 android:onClick="operar"
                 android:text="Operar" />
+
         </LinearLayout>
+
+        <Spinner
+            android:id="@+id/listaOperaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/botonComparar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="comparar"
+            android:text="COMPARAR" />
 
     </LinearLayout>
 
